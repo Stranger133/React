@@ -9,7 +9,7 @@
 
 #body{
   padding: 10px;
-  height: 100svh;
+  min-height: 75vh;
 }
 
 .App {
@@ -61,7 +61,6 @@ nav {
   padding: 2px  0 10px 0;
   margin-bottom: 10px;
   text-align: center;
-  max-width: 80%;
 }
 
 .food div{
