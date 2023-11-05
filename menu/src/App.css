@@ -1,0 +1,80 @@
+::-webkit-scrollbar{
+  background-color:azure;
+}
+
+::-webkit-scrollbar-thumb{
+  background-color: #219EBC;
+  border-radius: 10px;
+}
+
+.App {
+  margin: 0;
+  text-align: center;
+  color: white;
+}
+
+h1, h3, h5{
+  color: white;
+}
+
+#body{
+  padding: 10px;
+  min-height: 75vh;
+}
+
+nav {
+  text-align: center;
+  background-color: #023047;
+  padding: 10px 0;
+}
+
+.logo{
+  height: 200px;
+  width: auto;
+}
+
+#nav-items{
+  margin: 0px;
+  list-style-type: none;
+  width: auto;
+  word-wrap: break-word;
+  line-height: 1.8;
+  margin-right: 8%;
+}
+
+#nav-items li {
+  display:inline;
+  list-style-position: inside;
+  text-align: center;
+  border-radius: 10px;
+  padding: 5px 5px 5px 5px;
+  margin: 5px;
+}
+
+#nav-items li:hover{
+  background-color: #219EBC;
+}
+
+.food{
+  background-color: #219EBC;
+  border-radius: 5px;
+  padding: 2px  0 10px 0;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.food div{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #FB8500;
+  margin: 10px 0 10px 0;
+  padding: 5px;
+}
+
+#footer{
+  background-color: #023047;
+  padding: 20px;
+  text-align: center;
+  margin-top: auto;
+}
