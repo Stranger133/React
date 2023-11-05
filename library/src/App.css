@@ -1,0 +1,231 @@
+:root{
+    --lighter-background: #3F2E3E;
+    --dark-background: #331D2C;
+    --border: #A78295;
+    --text-color: #EFE1D1;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--lighter-background);
+    color: var(--text-color);
+    cursor: default;
+}
+nav{
+    padding: 10px;
+    background-color: var(--dark-background);
+}
+.nav-bar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#logo{
+    height: 30vw;
+    aspect-ratio: 1;
+}
+.link {
+    margin: 30px 0;
+    transition: all 0.3s;
+}
+.link:hover{
+    transform: translateY(-10px);
+}
+.recommend{
+    background-color: var(--dark-background);
+    border: solid 1px var(--border);
+    padding: 10px;
+    color: var(--text-color);
+    text-decoration: none;
+    transition: all 0.3s;
+}
+.recommend:hover{
+    background-color: var(--border);
+    color: var(--dark-background);
+}
+#current{
+    margin-top: 50px;
+    margin-left: 30px;
+    width: fit-content;
+}
+#container-current{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border: solid 1px var(--border);
+    transition: all 0.3s;
+    width: 75vw;
+    padding: 10px 0;
+    margin-left: 5vw;
+    height: auto;
+}
+
+@media screen and (min-width:550px){
+  #logo{
+    height: 150px;
+    aspect-ratio: 1;
+  }
+}
+@media screen and (min-width:700px){
+    #container-current{
+        flex-direction: row;
+    }
+}
+@media screen and (min-width:1000px){
+  #container-current{
+    min-width: 50%;
+  }
+}
+#container-current:hover{
+    transform: translateY(-5px);
+}
+.cover{
+  width: 150px;
+  margin: 10px 20px;
+  aspect-ratio: "16:9";
+  border-radius: 5px;
+}
+#contain-description {
+    display: flex;
+    flex-direction: column;
+    justify-content:last baseline;
+}
+#contain-description div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#contain-description div div{
+    margin-bottom: 40px;
+
+}
+.att{
+    color: var(--border);
+}
+#contain-description div:nth-child(1){
+    size: 26px;
+    font-style: italic;
+}
+
+#books{
+    margin-left: 20px;
+    max-width: 90%;
+}
+#container-books{
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: minmax(70px, auto);
+    gap: 1em;
+}
+@media screen and (min-width:600px){
+    #container-books{
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: minmax(70px, auto);
+    }
+}
+@media screen and (min-width:700px){
+    #container-books{
+        grid-template-columns: repeat(3, 1fr);
+        grid-auto-rows: minmax(100px, auto);
+        margin-right: 10%;
+    }
+}
+@media screen and (min-width:1000px){
+
+    #container-books{
+        grid-template-columns: repeat(4, 1fr);
+        grid-auto-rows: minmax(400px, auto);
+    }
+}
+@media screen and (min-width:1200px){
+
+    #container-books{
+        max-width: 95%;
+        grid-template-columns: repeat(5, 1fr);
+        grid-auto-rows: minmax(300px, auto);
+    }
+}
+@media screen and (min-width:1500px){
+
+  #container-books{
+      max-width: 95%;
+      grid-template-columns: repeat(6, 1fr);
+      grid-auto-rows: minmax(300px, auto);
+  }
+}
+.book{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 10px 20px;
+    border: solid 1px var(--border);
+    align-items: center;
+    text-align: center;
+    transition: all 0.3s;
+    aspect-ratio: "16:9";
+}
+.book:hover{
+    transform: translateY(-5px);
+}
+.title a{
+    color: var(--text-color);
+    text-decoration: none;
+}
+.title a:hover{
+    color: var(--border);
+    cursor: pointer;
+}
+.author{
+    color: var(--border);
+}
+#footer{
+  margin-top: 100px;
+  width: 100vw;
+  padding: 30px 0;
+  background-color: var(--dark-background);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.suggest{
+    color: var(--border);
+    margin-right: 5px;
+}
+.email:hover{
+    cursor: text;
+}
+#up{
+    text-decoration: none;
+    background-color: var(--dark-background);
+    border: 1px solid var(--border);
+    color: var(--text-color);
+    position:fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px;
+}
+#up img{
+    height: 20px;
+    aspect-ratio: 1;
+}
+@keyframes fade{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+.animate{
+    animation-name: fade;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
