@@ -1,7 +1,10 @@
-# My Book Library Web App
+# Books Library Web App
 
 This is a React-based web application that displays a list of books that you own. It provides a user-friendly interface to view the collection of owned books.
-### Try It [here](https://my-library-beta.vercel.app/)
+
+## Demo
+
+The live demo of the project can be accessed [here](https://my-library-beta.vercel.app/).
 
 ## Features
 
@@ -14,13 +17,13 @@ To run this project locally, ensure you have Node.js and npm (Node Package Manag
 1. Clone this repository:
 
     ```bash
-    git clone https://github.com/your-username/book-library-app.git
+    git clone https://github.com/Stranger133/library.git
     ```
 
 2. Navigate to the project directory:
 
     ```bash
-    cd book-library-app
+    cd library
     ```
 
 3. Install dependencies:
