@@ -3,7 +3,7 @@
   "name": "My Library",
   "icons": [
     {
-      "src": "https://www.iconsdb.com/icons/preview/white/library-xxl.png",
+      "src": "../src/resources/stack-of-books.png",
       "sizes": "64x64 32x32 24x24 16x16",
       "type": "image/png"
     }
