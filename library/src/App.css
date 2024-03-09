@@ -1,8 +1,8 @@
 :root{
-    --lighter-background: #3F2E3E;
-    --dark-background: #331D2C;
-    --border: #A78295;
-    --text-color: #EFE1D1;
+    --lighter-background: #222831;
+    --dark-background: #31363F;
+    --border: #76ABAE;
+    --text-color: #EEEEEE;
 }
 html{
     scroll-behavior: smooth;
